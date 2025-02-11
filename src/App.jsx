@@ -53,9 +53,7 @@ const App = () => {
         email:formData.email,
         password:formData.password
       }
-      
-      
-      
+
     ]);
 
     toast.success(" Login Successfull ❤️", {
@@ -69,11 +67,13 @@ const App = () => {
       theme: "dark",
     });
 
-    seterror("");
-    setConfirmPass("");
-    setEmail("");
-    setPassword("");
-    setfullName("");
+    seterror(' ');
+    setformData({
+      fullName:'',
+      email:'',
+      password:'',
+      confirmPass:' ',
+    })
   };
 
   return (
